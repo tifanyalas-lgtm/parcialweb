@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Boutique | Tienda de Vestidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Violet <span>Boutique</span></div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Vestidos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="cart-button" onclick="mostrarCarrito()">
+             Carrito (<span id="contador">0</span>)
+        </button>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-text">
+            <p class="subtitle">NUEVA COLECCIÓN 2026</p>
+            <h1>Viste bonito,<br>siéntete única.</h1>
+            <p>Descubre vestidos que resaltan tu belleza y estilo.</p>
+            <a href="#catalogo" class="btn">Ver colección</a>
+        </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+        <p class="subtitle">NUESTRA SELECCIÓN</p>
+        <h2>Encuentra tu vestido ideal</h2>
+        <p class="descripcion">Diseños especiales para cada ocasión.</p>
+
+        <div class="productos">
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=600" alt="Vestido elegante">
+                <h3>Vestido Elegance</h3>
+                <p>$35.00</p>
+                <button onclick="agregarCarrito('Vestido Elegance', 35)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600" alt="Vestido de fiesta">
+                <h3>Vestido Romantic</h3>
+                <p>$42.00</p>
+                <button onclick="agregarCarrito('Vestido Romantic', 42)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=600" alt="Vestido moderno">
+                <h3>Vestido Chic</h3>
+                <p>$38.00</p>
+                <button onclick="agregarCarrito('Vestido Chic', 38)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600" alt="Vestido casual">
+                <h3>Vestido Blossom</h3>
+                <p>$30.00</p>
+                <button onclick="agregarCarrito('Vestido Blossom', 30)">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+        <h2>Sobre Violet Boutique</h2>
+        <p>
+            Somos una tienda dedicada a ofrecer vestidos hermosos,
+            modernos y elegantes para mujeres que aman expresar
+            su personalidad a través de la moda.
+        </p>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>¿Te gustaría realizar un pedido?</h2>
+        <p>Estamos listas para ayudarte a encontrar tu estilo.</p>
+        <a href="https://wa.me/50300000000" class="btn">Contáctanos por WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Violet Boutique | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
